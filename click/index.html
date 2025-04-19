@@ -75,8 +75,23 @@
 
 	<div class="click-page">
 		<div class="container">
-			<div class="click__logo">
-				<img src="images/dist/logo.svg">
+			<div class="click__header">
+				<div class="click__logo">
+					<img src="images/dist/logo.svg">
+				</div>
+				<div class="click-register">
+					<div class="click-register__icon">
+						<img src="images/dist/register-icon.svg">
+					</div>
+					<div class="click-register__content">
+						<span>
+							Зарегистрировано в реестре <br>рооссийского программного обеспечения
+						</span>
+						<p>
+							Реепстровая запись №18511
+						</p>
+					</div>
+				</div>
 			</div>
 			<h1 class="click__title">
 				Вас скликивают! Узнайте, <br>где и сколько вы теряете!
@@ -112,12 +127,14 @@
 				</div>
 								<input type="text" name="Ip" value="62.133.61.131" hidden="">
 				<input type="text" name="Url" value="https://botfaqtor.ru/click/" hidden="">
-				<button type="submit" class="click__form-submit">
-					Отправить заявку
-				</button>
-				<a href="#" class="click__policy">
-					Политика конфиденциальности
-				</a>
+				<div class="click__btn_wrap">
+					<button type="submit" class="click__form-submit">
+						Отправить заявку
+					</button>
+					<a href="#" class="click__policy">
+						Политика конфиденциальности
+					</a>
+				</div>
 			</form>
 			<div class="click__bottom">
 				<div class="click-register">
@@ -134,12 +151,18 @@
 					</div>
 				</div>
 			</div>
-		</div>
-		<div class="click__right">
-			<img src="images/dist/bg-item1.webp" class="click__bg-item1">
-			<img src="images/dist/bg-item2.webp" class="click__bg-item2">
-			<img src="images/dist/statistick_graph.svg" class="click__statistick_graph">
-			<img src="images/dist/mouse-icon.svg" class="click__macbook-mouse">
+			<div class="click__right click__right__hieght_init">
+				<img src="images/dist/bg-item1.webp" class="click__bg-item1">
+				<img src="images/dist/bg-item2.svg" class="click__bg-item2">
+				<picture class="click__statistick_graph">
+					<source media="(max-width: 991px)" srcset="images/dist/statistick_graph_small.svg">
+					<img src="images/dist/statistick_graph.svg">
+				</picture>
+				<img src="images/dist/mouse-icon.svg" class="click__macbook-mouse">
+			</div>
+			<a href="#" class="click__policy">
+				Политика конфиденциальности
+			</a>
 		</div>
 	</div>
 

@@ -75,8 +75,23 @@
 
 	<div class="click-page">
 		<div class="container">
-			<div class="click__logo">
-				<img src="images/dist/logo.svg">
+			<div class="click__header">
+				<div class="click__logo">
+					<img src="images/dist/logo.svg">
+				</div>
+				<div class="click-register">
+					<div class="click-register__icon">
+						<img src="images/dist/register-icon.svg">
+					</div>
+					<div class="click-register__content">
+						<span>
+							Зарегистрировано в реестре <br>рооссийского программного обеспечения
+						</span>
+						<p>
+							Реепстровая запись №18511
+						</p>
+					</div>
+				</div>
 			</div>
 			<h1 class="click__title click__title__font-size-pc-54">
 				Узнай, скликивают ли <br>твою рекламу!
@@ -114,12 +129,14 @@
 				</div>
 								<input type="text" name="Ip" value="62.133.61.131" hidden="">
 				<input type="text" name="Url" value="https://botfaqtor.ru/click/" hidden="">
-				<button type="submit" class="click__form-submit">
-					Отправить заявку
-				</button>
-				<a href="#" class="click__policy">
-					Политика конфиденциальности
-				</a>
+				<div class="click__btn_wrap">
+					<button type="submit" class="click__form-submit">
+						Хочу узнать
+					</button>
+					<a href="#" class="click__policy">
+						Политика конфиденциальности
+					</a>
+				</div>
 			</form>
 			<div class="click__bottom">
 				<div class="click-register">
@@ -136,12 +153,29 @@
 					</div>
 				</div>
 			</div>
-		</div>
-		<div class="click__right">
-			<img src="images/dist/bg-item1.webp" class="click__bg-item1 click__bg-item1__alter">
-			<img src="images/dist/bg-item2.svg" class="click__bg-item2 click__bg-item2__alter">
-			<img src="images/dist/comon_analitick.svg" class="click__comon_analitick">
-			<img src="images/dist/mouse-icon.svg" class="click__macbook-mouse">
+			<div class="click__right">
+				<img src="images/dist/bg-item1.webp" class="click__bg-item1">
+				<img src="images/dist/bg-item2.svg" class="click__bg-item2 click__bg-item2__alter">
+				<div class="click__comon_analitick click__comon_analitick__wrap">
+					<a href="#" class="click__comon_analitick__block1">
+						<picture>
+							<source media="(max-width: 991px)" srcset="images/dist/comon_analitick1_small.svg">
+							<img src="images/dist/comon_analitick1.svg">
+						</picture>
+					</a>
+					<div class="click__comon_analitick__block2"><b>Получите два отчёта сразу: </b>анализ <br>трафика и сравнение с конкурентами</div>
+					<a href="#" class="click__comon_analitick__block3">
+						<picture>
+							<source media="(max-width: 991px)" srcset="images/dist/comon_analitick2_small.svg">
+							<img src="images/dist/comon_analitick2.svg">
+						</picture>
+					</a>
+				</div>
+				<img src="images/dist/mouse-icon.svg" class="click__macbook-mouse">
+			</div>
+			<a href="#" class="click__policy">
+				Политика конфиденциальности
+			</a>
 		</div>
 	</div>
 
