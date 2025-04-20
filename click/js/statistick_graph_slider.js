@@ -1,0 +1,1 @@
+document.addEventListener('DOMContentLoaded',()=>{const e=document.querySelectorAll('.slide');let t=0,n=e.length,o=5e3;function i(){e.forEach(e=>{e.classList.remove('active','prev','next')});const n=(t-1+e.length)%e.length,o=(t+1)%e.length;e[t].classList.add('active'),e[n].classList.add('prev'),e[o].classList.add('next')}function c(){t=(t+1)%n,i()}i(),setInterval(c,o)});

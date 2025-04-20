@@ -31,8 +31,6 @@
 	<!-- --------------------------------- HEAD SCRIPTS --------------------------------- -->
 	<!-- --------------------------------- HEAD SCRIPTS --------------------------------- -->
 	<link rel="stylesheet" href="css/app.min.21121457.css">
-	<!-- jquery -->
-	<script async="" src="../common/plugins/jquery/jquery-3.6.4.min.js"></script>
 	<!-- fonts -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
@@ -156,10 +154,22 @@
 			<div class="click__right click__right__hieght_init">
 				<img src="images/dist/bg-item1.webp" class="click__bg-item1">
 				<img src="images/dist/bg-item2.svg" class="click__bg-item2">
-				<picture class="click__statistick_graph">
-					<source media="(max-width: 991px)" srcset="images/dist/statistick_graph_small.svg">
-					<img src="images/dist/statistick_graph.svg">
-				</picture>
+				<div class="slider-container click__statistick_graph">
+					<div class="slider">
+						<picture class="slide active">
+							<source media="(max-width: 991px)" srcset="images/dist/statistick_graph1_small.svg">
+							<img src="images/dist/statistick_graph1.svg">
+						</picture>
+						<picture class="slide next">
+							<source media="(max-width: 991px)" srcset="images/dist/statistick_graph2_small.svg">
+							<img src="images/dist/statistick_graph2.svg">
+						</picture>
+						<picture class="slide prev">
+							<source media="(max-width: 991px)" srcset="images/dist/statistick_graph3_small.svg">
+							<img src="images/dist/statistick_graph3.svg">
+						</picture>
+					</div>
+				</div>
 				<img src="images/dist/mouse-icon.svg" class="click__macbook-mouse">
 			</div>
 			<a href="#" class="click__policy">
