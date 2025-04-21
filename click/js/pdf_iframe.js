@@ -1,1 +1,28 @@
-$(function(){$('.pdf-link').click(function(e){e.preventDefault();var t=$(this).data('pdf');/Mobile/i.test(navigator.userAgent)?window.open(t,'_blank'):($('.pdf-iframe').attr('src',t),$('.pdf-popup').show())});$('.close-popup, .pdf-popup').click(function(e){e.target===this&&($('.pdf-popup').hide(),$('.pdf-iframe').attr('src',''))})});
+$(function(){
+    $('.pdf-link').click(function(e){
+        e.preventDefault();
+        var pdfUrl = $(this).data('pdf');
+        var imageUrl = $(this).data('image');
+        
+        if(window.innerWidth <= 991) {
+            // Для мобильных - показываем изображение
+            $('.pdf-iframe').hide();
+            $('#mobileImageWrap').show();
+            $('#mobileImage').attr('src', imageUrl);
+            $('.pdf-popup').show();
+        } else {
+            // Для десктопов - показываем PDF
+            $('#mobileImageWrap').hide();
+            $('.pdf-iframe').attr('src', pdfUrl).show();
+            $('.pdf-popup').show();
+        }
+    });
+    
+    $('.close-popup, .pdf-popup').click(function(e){
+        if(e.target === this || $(e.target).hasClass('close-popup')) {
+            $('.pdf-popup').hide();
+            $('.pdf-iframe').attr('src', '');
+            $('#mobilemage').attr('src', '');
+        }
+    });
+});
